@@ -1,0 +1,140 @@
+body{
+	background-image: var(--bg-image);
+	background-size: cover;
+	background-color: var(--bg-color);
+}
+
+a{
+	text-decoration: none;
+}
+
+:root {
+    --font-color: #000000;
+    --bg-color: #ffffff;
+	--logo-img: url("logob.png");
+	--bg-transp: rgba(255, 255, 255, 0.7);
+	--link-color: #9a22d6;
+	--bg-image: url("unsp.jpg");
+}
+
+[data-theme="dark"] {
+    --font-color: #ffffff;
+    --bg-color: #000000;
+	--logo-img: url("logow.png");
+	--bg-transp: rgba(0, 0, 0, 0.7);
+	--link-color: #e3abff;
+	--bg-image: url("https://source.unsplash.com/1920x1080/?dark-wallpaper");
+}
+
+.header{
+	margin-top: 15px;
+	font-family: FSIFILL;
+}
+
+.header p{
+	font-family: Segoe UI Semibold;
+	font-size: 17px;
+	color: var(--font-color);
+	margin-bottom: 5px;
+	margin-left: 16px;
+}
+
+.headerLinks{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	margin-left: 15px;
+}
+
+.header a{
+	color: var(--font-color);
+	font-size: 25px;
+	padding-right: 8px;
+	opacity: 60%;
+	transition: opacity .2s;
+}
+
+.header a:hover{
+	opacity: 100%;
+}
+
+.bodyLinks{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blSection{
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.link{
+	width: 250px;
+	height: 90px;
+	background-color: white;
+	border: solid #D1D1D1 1px;
+	border-radius: 5px;
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+	transition: box-shadow .2s;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.link:hover{
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.link img{
+	width: 30px;
+	height: 30px;
+}
+
+.qlfCont{
+	width: 50px;
+	height: 50px;
+	background-color: #D1D1D1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+
+.qlTitles{
+	margin-left: 15px;
+}
+
+.qlTitles p{
+	margin: 0;
+	font-family: Segoe UI;
+	color: var(--font-color);
+}
+
+#qlName{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#qlURL{
+	font-weight: light;
+	font-size: 14px;
+}
+
+#googleLogo{
+	margin-bottom: 25px;
+}
