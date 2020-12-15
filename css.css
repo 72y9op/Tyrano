@@ -2,6 +2,7 @@ body{
 	background-image: var(--bg-image);
 	background-size: cover;
 	background-color: var(--bg-color);
+	
 }
 
 a{
