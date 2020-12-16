@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>New Tab</title>
 <link rel="stylesheet" href="css.css">
 <link rel="stylesheet" href="fonts.css">
@@ -15,12 +16,20 @@
 <a href="https://www.youtube.com">﬌</a>
 <a href="https://music.youtube.com"></a>
 </div>
+
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+</div>
+
 </div>
 
 <div class="bodyLinks">
 
 <div class="blHeader">
-<img id="googleLogo" src="https://www.google.com/logos/doodles/2020/december-holidays-days-2-30-6753651837108830.3-law.gif"></div>
+<img id="googleLogo" src="mslogo.svg"></div>
 
 <div class="blSection all-slides">
 
@@ -97,6 +106,35 @@
 </div>
 
 </div>
+
+<script>
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+
+Resources
+</script>
 
 </body>
 
