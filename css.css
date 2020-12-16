@@ -26,6 +26,11 @@ a{
 .header{
 	margin-top: 15px;
 	font-family: FSIFILL;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
 }
 
 .header p{
@@ -51,7 +56,8 @@ a{
 	font-size: 25px;
 	opacity: 50%;
 	transition: opacity .2s;
-	margin: 6px;
+	margin: 5px;
+	margin-top: 8px;
 }
 
 .header a:hover{
@@ -59,16 +65,28 @@ a{
 }
 
 .bodyLinks{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -60%);
 	margin: 0;
 	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.blHeader{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#linkLbl{
+	font-family: Segoe UI Semibold;
+	font-size: 17px;
+	color: var(--font-color);
 }
 
 .blSection{
@@ -76,15 +94,15 @@ a{
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	width: 50%;
+	width: 60%;
 	flex-wrap: wrap;
 }
 
 .link{
-	width: 250px;
-	height: 90px;
+	width: 225px;
+	height: 80px;
 	background-color: var(--rest-color);
-	border-radius: 5px;
+	border-radius: 4px;
 	transition:.2s;
 	margin: 10px;
 	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
@@ -100,18 +118,18 @@ a{
 }
 
 .link img{
-	width: 30px;
-	height: 30px;
+	width: 24px;
+	height: 24px;
 }
 
 .qlfCont{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	background-color: #D1D1D1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 10px;
+	margin-left: 15px;
 	border-radius: 50%;
 }
 
@@ -127,12 +145,12 @@ a{
 
 #qlName{
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 #qlURL{
 	font-weight: light;
-	font-size: 13px;
+	font-size: 12px;
 	opacity: 70%;
 }
 
@@ -141,10 +159,14 @@ a{
 	width: 230px;
 }
 
+.hide2{
+	display: none;
+}
+
 .theme-switch-wrapper {
 	position: absolute;
 	right: 2%;
-	top: 3%;
+	top: 50%;
 	display: flex;
 	align-items: center;
 }
@@ -200,13 +222,21 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width: 1081px) {
-  div.blSection {
-    width: 50%;
+  div.blSection, #linkLbl{
+    width: 60%;
+  }
+  
+  #linkLbl{
+	width: 54%;
   }
 }
 
 @media only screen and (max-width: 1080px) {
-  div.blSection {
+  div.blSection{
     width: 100%;
+  }
+  
+  #linkLbl{
+	width: 80%;
   }
 }
