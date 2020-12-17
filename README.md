@@ -1,2 +1,2 @@
-# Futur3NTP
- A more modern NTP
+# Tyrano
+ Oh brother, remake a "Starting firefox" page
