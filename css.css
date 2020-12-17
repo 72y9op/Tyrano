@@ -149,7 +149,7 @@ a{
 	transform: scale(1.05, 1.05);
 }
 
-.link img{
+.qlFavicon{
 	width: 24px;
 	height: 24px;
 }
@@ -251,6 +251,27 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#placeholder{
+	visibility: initial;
+}
+
+.addLink{
+	justify-content: center;
+	box-shadow: none;
+	background-color: transparent;
+	cursor: initial;
+}
+
+.addQLFCont{
+	margin: 0;
+	background-color: transparent;
+}
+
+.addQLFav{
+	width: 30px;
+	height: 30px;
 }
 
 @media only screen and (min-width: 1081px) {
